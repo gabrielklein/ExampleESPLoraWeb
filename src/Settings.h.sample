@@ -1,0 +1,38 @@
+
+#ifndef SETTINGS_H
+#define SETTINGS_H
+
+// -------------------------
+
+// Maximum number of items in config files
+// Avoid using a crazy value
+
+// Comment it if you want to have a static ip
+#define CLI_DHCP
+// Only needed if CLI_DHCP is commented (disabled)
+#define CLI_IP "10.0.0.37"
+#define CLI_SUBNET "255.255.255.0"
+#define CLI_GATEWAY "10.0.0.1"
+#define CLI_DNS "8.8.8.8"
+
+#define CLI_SSID "YourSSIDName"
+#define CLI_PASSWORD "YourPassword"
+
+
+#define RF95_FREQ 433.0000
+
+// How to connect ESP8266 to RF98
+// D8 NSS
+#define RFM95_CS D8
+// D2 RST
+#define RFM95_RST D2
+// D1 DIO0
+#define RFM95_INT D1
+// D5 SCK
+// D6 MISO
+// D7 MOSI
+// D8 NSS
+
+
+
+#endif
